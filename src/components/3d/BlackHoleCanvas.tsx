@@ -515,15 +515,16 @@ export const BlackHoleCanvas: React.FC<BlackHoleCanvasProps> = ({ onLoaded }) =>
     };
     window.addEventListener('resize', handleResize);
 
-    // 6. Animation Loop with Multi-layer Parallax
+    // 6. Animation Loop with Multi-layer Parallax (using THREE.Timer)
     let animationFrameId = 0;
-    const clock = new THREE.Clock();
+    const timer = new THREE.Timer();
 
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
 
-      const delta = Math.min(clock.getDelta(), 0.1);
-      const elapsed = clock.getElapsedTime();
+      timer.update();
+      const delta = Math.min(timer.getDelta(), 0.1);
+      const elapsed = timer.getElapsed();
 
       // Exponential damping for smooth pointer physics
       mouse.x = THREE.MathUtils.damp(mouse.x, mouse.targetX, 4.0, delta);
