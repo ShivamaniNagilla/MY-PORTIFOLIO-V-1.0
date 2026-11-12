@@ -15,7 +15,7 @@ export const PERSONAL_INFO = {
   email: 'shivamani.7981570112@gmail.com',
   linkedin: 'https://www.linkedin.com/in/shivamani-nagilla-7b0105440/',
   github: 'https://github.com/ShivamaniNagilla',
-  avatarUrl: '/src/assets/images/shivamani_profile.jpeg',
+  avatarUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-11-11%20at%2021.51.58-CctgEbuvJQ0dCOvMsn38nPVOCii99t.png',
   heroDescription:
     'Exploring the universe of technology, building ideas into reality, and creating meaningful digital experiences through code.',
   aboutIntroduction:
