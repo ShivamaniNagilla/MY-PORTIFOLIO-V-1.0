@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Plus, Sparkles } from 'lucide-react';
 import { ProjectItem } from '../../types/portfolio';
+import healthWatchImage from '../../assets/images/health_watch_ui_1794412753485.jpg';
 
 interface AddProjectModalProps {
   isOpen: boolean;
@@ -38,7 +39,7 @@ export const AddProjectModal: React.FC<AddProjectModalProps> = ({ isOpen, onClos
       status,
       liveUrl: liveUrl.trim() || undefined,
       githubUrl: githubUrl.trim() || undefined,
-      imageUrl: '/src/assets/images/health_watch_ui_1794412753485.jpg', // fallback image
+      imageUrl: healthWatchImage, // fallback image
       role: role.trim() || 'Software Engineer',
       timeline: '2026',
       highlights: [

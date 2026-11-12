@@ -1,4 +1,8 @@
 import { ProjectItem, SkillItem, MilestoneItem } from '../types/portfolio';
+import profileImage from '../assets/images/shivamani_profile.jpeg';
+import lostDantaImage from '../assets/images/lost_danta_game_1794412753519.jpg';
+import healthWatchImage from '../assets/images/health_watch_ui_1794412753485.jpg';
+import geolocationImage from '../assets/images/geolocation_api_project_1794416581921.jpg';
 
 export const PERSONAL_INFO = {
   fullName: 'Nagilla Shivamani',
@@ -15,7 +19,7 @@ export const PERSONAL_INFO = {
   email: 'shivamani.7981570112@gmail.com',
   linkedin: 'https://www.linkedin.com/in/shivamani-nagilla-7b0105440/',
   github: 'https://github.com/ShivamaniNagilla',
-  avatarUrl: '/src/assets/images/shivamani_profile.jpeg',
+  avatarUrl: profileImage,
   heroDescription:
     'Exploring the universe of technology, building ideas into reality, and creating meaningful digital experiences through code.',
   aboutIntroduction:
@@ -77,7 +81,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "A mythology-inspired adventure game concept where a young devotee discovers an ancient Ganesha temple hidden inside a mysterious forest. Guided by Mushak, the player solves ancient scripture puzzles, faces obstacles, and searches for Ganesha's lost danta.",
     technologies: ['Game Design Concept', 'Narrative Architecture', 'Puzzle Logic', 'Level Storyboarding', 'Unreal / Unity Vision'],
     status: 'Concept',
-    imageUrl: '/src/assets/images/lost_danta_game_1794412753519.jpg',
+    imageUrl: lostDantaImage,
     role: 'Lead Concept Creator & Narrative Designer',
     timeline: '2025 – Present',
     highlights: [
@@ -96,7 +100,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     technologies: ['AI Tools', 'Lovable.dev', 'React', 'Biometric Metrics', 'Data Visualization'],
     status: 'Live',
     liveUrl: 'https://lovable.dev/projects/53fda0c0-61a5-4f86-af3b-118dd3b7416a',
-    imageUrl: '/src/assets/images/health_watch_ui_1794412753485.jpg',
+    imageUrl: healthWatchImage,
     role: 'Creator & Frontend Developer',
     timeline: '2025',
     highlights: [
@@ -114,7 +118,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'A high-performance geolocation web application utilizing the HTML5 Geolocation API and spatial mapping services. Features live latitude/longitude triangulation, spatial accuracy radar visualization, altitude and heading metrics, and reverse geocoding into localized landmarks.',
     technologies: ['Geolocation API', 'JavaScript', 'HTML5 APIs', 'Spatial Mapping', 'Leaflet / OpenStreetMap', 'Responsive Telemetry'],
     status: 'Live',
-    imageUrl: '/src/assets/images/geolocation_api_project_1794416581921.jpg',
+    imageUrl: geolocationImage,
     role: 'Lead Developer & Frontend Architect',
     timeline: '2026',
     highlights: [
