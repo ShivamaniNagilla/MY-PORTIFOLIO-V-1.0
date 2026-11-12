@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
   return {
+    // GitHub Pages hosts project sites beneath the repository name.
+    base: mode === 'github-pages' ? '/MY-PORTIFOLIO-V-1.0/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
